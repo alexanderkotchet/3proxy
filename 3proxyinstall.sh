@@ -1,8 +1,8 @@
 version=0.8.9
 apt-get update && apt-get -y upgrade
 apt-get install gcc make git -y
-wget --no-check-certificate -O 3proxy-${version}.tar.gz https://github.com/SnoyIatK/3proxy/raw/master/archive/3proxy-${version}.tar.gz
-tar xzf 3proxy-${version}.tar.gz
+wget --no-check-certificate -O 3proxy-${version}.tgz https://github.com/SnoyIatK/3proxy/raw/master/archive/3proxy-${version}.tgz
+tar xvzf 3proxy-${version}.tgz
 cd 3proxy-${version}
 make -f Makefile.Linux
 cd src
